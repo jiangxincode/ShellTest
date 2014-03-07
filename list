@@ -20,3 +20,5 @@
 192.168.100.2/255.255.255.0
 此方法仅适用于大部分linux系统
 
+#httpd.sh
+Start/stop/restart the Apache web server.
