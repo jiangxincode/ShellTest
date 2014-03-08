@@ -1,0 +1,5 @@
+这是一个在Ubuntu中安装和卸载jdk的脚本
+使用时请将下载的jdk-7u51-linux-i586.tar.gz与
+脚本install.sh和ununinstall.sh放在同一文件夹中。
+jdk-7u51-linux-i586.tar.gz的下载地址：
+http://pan.baidu.com/s/1gd3MCt9
