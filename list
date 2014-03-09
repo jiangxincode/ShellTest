@@ -31,3 +31,6 @@ Start/stop/restart the Apache web server.
 
 #jdk_install_uninstall
 包括两个脚本，详见对应文件夹中的README
+
+#jdk_install_2
+详见对应文件夹中的README
