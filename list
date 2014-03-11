@@ -37,3 +37,9 @@ Start/stop/restart the Apache web server.
 
 #jdk_install_3
 详见对应文件夹中的README
+
+#add_users.sh
+Add a new group named class1, then add thirty users named stu01-stu30 to this group.
+
+#delete_users.sh
+Delete 30 users named stu01-stu30 which group is class1, and then delete the group class1.
