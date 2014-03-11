@@ -11,5 +11,7 @@
 #	2014/01/01	jiangxin	First release
 # Warning:
 #	This procedure without any warranty.
+# Instructions
+#	Run as root!
 
 echo "hello"
