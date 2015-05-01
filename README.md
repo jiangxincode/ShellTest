@@ -1,62 +1,51 @@
-这是一个shell script的文件库。
-在学习shell script过程中我发现许多脚本都具有重用性，我们没有必要每当需要某个脚本时再从头开始编辑，当然你可能觉得随时从网上寻找相关脚本也是个不错的解决办法，但无疑这是很低效率的。而且当你真的实践过几次以后你会发现网上的shell脚本质量无法得到保证（我并不是说网上的脚本都很差），而且不同人编写的脚本风格相差很多，这样我们在读起来时难免要费些周折，所以我才萌发起这个建立一个shell scripts library的想法。我希望这个库能够满足日常工作学习的需要。当然这不是我一个人可以完成的，我希望能够得到大家的帮助。大家可以fork这个项目，帮我完善它的功能。
-在编写过程中，我参考了许多网上的脚本，甚至一些优美的代码是直接copy过来的，因为我觉得这些代码是经过大家筛选出的，在实践过程中的效率很高。所以我便没有更改。但对于大部分脚本来说我修改了它们，在考虑运行效率/安全性/代码编写规范等情况之后，我希望经过修改后的代码能够更加完善。
-关于这些shell script都是什么作用，请参考list文件，上面有着相对具体的说明。另外你可以根据list文件中的说明找到相应的shel 脚本。里面也有很详细的注释。
-
-by jiangxin
-jiangxinnju@126.com
-
-
-# 这是此shell scripts library中所有内容的列表：
-
-#install.sh:
++ install.sh:
 该shell script适合ubuntu新手用来在安装ubuntu之后快速的实现一个适合自己的软件环境。你可以运行该脚本，该脚本会实现无人监管的软件安装。
 如果你已经熟悉了ubuntu的使用，但有些情况下你可能仍需要重装系统，那么这个脚本也是适合你的，你可以修改一下这个脚本中的内容，然后构建出专属与你自己的install.sh。但是当你需要重装系统时请注意一下几点：
 （1）为了重装方便，最好备份一下“主文件夹”，里面全是各个软件的配置。
 
-#move.sh
++ move.sh
 将当前目录下大于10K的文件转移到/tmp目录下
 
-#print_ip_network1.sh
++ print_ip_network1.sh
 获取本机的网络地址（方法一）
 比如：本机的ip地址是：192.168.100.2/255.255.255.0，那么它的网络地址是
 192.168.100.2/255.255.255.0
 此方法仅适用于redhat系列linux系统
 
-#print_ip_network2.sh
++ print_ip_network2.sh
 获取本机的网络地址（方法二）
 比如：本机的ip地址是：192.168.100.2/255.255.255.0，那么它的网络地址是
 192.168.100.2/255.255.255.0
 此方法仅适用于大部分linux系统
 
-#httpd.sh
++ httpd.sh
 Start/stop/restart the Apache web server.
 
-#make_dir.sh
++ make_dir.sh
 在/userdata目录下建立50个目录，即user1～user50，并设置每个目录的权限:
 其他用户的权限为：读；
 文件所有者的权限为：读、写、执行；
 文件所有者所在组的权限为：读、执行。
 
-#jdk_install_1
++ jdk_install_1
 包括两个脚本，详见对应文件夹中的README
 
-#jdk_install_2
++ jdk_install_2
 详见对应文件夹中的README
 
-#jdk_install_3
++ jdk_install_3
 详见对应文件夹中的README
 
-#add_users.sh
++ add_users.sh
 Add a new group named class1, then add thirty users named stu01-stu30 to this group.
 
-#delete_users.sh
++ delete_users.sh
 Delete 30 users named stu01-stu30 which group is class1, and then delete the group class1.
 
-#jieya.ph
++ jieya.ph
 a python script
  
-#rename.sh
++ rename.sh
 Rename a group of files from a filetype to another.
 (for example:*.c->*.cpp)
 思路如下：
@@ -64,6 +53,3 @@ Rename a group of files from a filetype to another.
 2、去除扩展名
 3、使用awk将要进行的操作以字符串命令形式组合
 4、将组合完毕的字符串传递给shell执行
-
-#temp/
-临时文件夹
