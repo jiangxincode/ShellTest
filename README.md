@@ -33,17 +33,36 @@ Start/stop/restart the Apache web server.
 文件所有者的权限为：读、写、执行；
 文件所有者所在组的权限为：读、执行。
 
-+ jdk_install_1
++ jdkinstall.sh/jdkuninstall.sh
 
-包括两个脚本，详见对应文件夹中的README
+如果大家必须在Linux环境下使用java开发应用程序，会感觉Linux下JDK和Eclipse等相关软件安装都很复杂，所以我特意写了一个脚本，这是一个在Linux下自动安装/卸载JDK和Eclipse的脚本，实现一键安装卸载，无任何额外文件产生。大家可以尝试一下。
+文件包等下载地址：
+	http://pan.baidu.com/s/1sjArVM9
+脚本能够自动识别系统是32位的还是64位的，并自动选择Jdk和Eclipse等版本。
+测试环境：
+	Linux发行版本：Ubuntu 14.04
+JDK版本：
+	jdk-7u60-linux-i586（32位）
+	jdk-7u60-linux-x64（64位）
+Eclipse版本：
+	eclipse-java-luna-R-linux-gtk（32位）
+	eclipse-java-luna-R-linux-gtk-x86_64（64位）
+使用时请确保此文件夹存在以下文件：
+├── eclipse-java-luna-R-linux-gtk.tar.gz
+├── eclipse-java-luna-R-linux-gtk-x86_64.tar.gz
+├── jdkinstall.sh
+├── jdk-7u60-linux-i586.tar.gz
+├── jdk-7u60-linux-x64.tar.gz
+└── jdkuninstall.sh
+你可以尝试修改该脚本以实现更加适合自己等功能，欢迎大家提出修改意见。
+部分Linux系统会自带OpenJava，可以在安装前看看java/javac等命令是否有效。
+如果该脚本失败请参考另外的jdkinstall2.sh 和 jdkinstall3.sh
 
-+ jdk_install_2
++ jdkinstall2.sh
 
-详见对应文件夹中的README
 
-+ jdk_install_3
++ jdkinstall3.sh
 
-详见对应文件夹中的README
 
 + add_users.sh
 
@@ -62,7 +81,7 @@ a python script
 Rename a group of files from a filetype to another.
 (for example:*.c->*.cpp)
 思路如下：
-1、查找出相应扩展名的文件
-2、去除扩展名
-3、使用awk将要进行的操作以字符串命令形式组合
-4、将组合完毕的字符串传递给shell执行
+- 查找出相应扩展名的文件
+- 去除扩展名
+- 使用awk将要进行的操作以字符串命令形式组合
+- 将组合完毕的字符串传递给shell执行
