@@ -74,10 +74,6 @@ Add a new group named class1, then add thirty users named stu01-stu30 to this gr
 
 Delete 30 users named stu01-stu30 which group is class1, and then delete the group class1.
 
-## jieya.ph
-
-a python script
- 
 ## rename.sh
 
 Rename a group of files from a filetype to another.
