@@ -84,3 +84,7 @@ Rename a group of files from a filetype to another.
 - 去除扩展名
 - 使用awk将要进行的操作以字符串命令形式组合
 - 将组合完毕的字符串传递给shell执行
+
+## killcpu
+
+A script for kill cup resource. If you want to construct an alarm, you may need it.
