@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/jiangxincode/ShellTest/badges/gpa.svg)](https://codeclimate.com/github/jiangxincode/ShellTest)
+[![Issue Count](https://codeclimate.com/github/jiangxincode/ShellTest/badges/issue_count.svg)](https://codeclimate.com/github/jiangxincode/ShellTest)
 ## install.sh:
 
 该shell script适合ubuntu新手用来在安装ubuntu之后快速的实现一个适合自己的软件环境。你可以运行该脚本，该脚本会实现无人监管的软件安装。
